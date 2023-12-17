@@ -1,0 +1,19 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e363a;
+    height: 120px;
+    width: 100vw;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    cursor: pointer;
+}
+.navItem{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
