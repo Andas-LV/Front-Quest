@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import QuestPage from "@/app/pages/QuestPage";
+import QuestPage from "@/app/components/QuestPage";
 import questions from '../../data/questions.json';
 
 const Page = () => {

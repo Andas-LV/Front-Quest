@@ -3,24 +3,28 @@
     justify-content: center;
     align-items: center;
     background-color: #181818;
-    height: 120px;
+    height: 15vh;
     width: 100vw;
     box-shadow: 0 5px 10px rgba(255,255,255,0.3);
 }
 .nav{
     display: flex;
-    justify-content: space-between;
-    gap: 100px;
+    flex-wrap: wrap;
+    gap: 10vw;
     cursor: pointer;
+    padding: 0 10px;
 }
+
 .navItem{
+    flex-grow: 1;
+    flex-basis: 200px;
     color: white;
     font-size: 18px;
     font-weight: 500;
 }
 /*CARDS*/
 .cardWrapper{
-    width: 700px;
+    width: 75vw;
     padding: 15px;
     background-color: #171b1e;
     margin: 10px 0;
@@ -37,6 +41,19 @@
     font-weight: 500;
     font-size: 24px;
     margin-bottom: 10px;
+}
+.p{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.li{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.label{
+    display: flex;
+    gap: 5px;
 }
 /*BUTTON START*/
 

@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
-import QuestCard from "../components/QuestCard";
-import Btn from "@/app/components/Btn";
+import QuestCard from "./QuestCard";
+import Btn from "./Btn";
 
 const QuestPage = ({ questionData }) => {
 
