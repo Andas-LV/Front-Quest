@@ -2,14 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2e363a;
+    background-color: #181818;
     height: 120px;
     width: 100vw;
+    box-shadow: 0 5px 10px rgba(255,255,255,0.3);
 }
 .nav{
     display: flex;
     justify-content: space-between;
-    gap: 70px;
+    gap: 100px;
     cursor: pointer;
 }
 .navItem{
@@ -17,3 +18,85 @@
     font-size: 18px;
     font-weight: 500;
 }
+/*CARDS*/
+.cardWrapper{
+    width: 700px;
+    padding: 15px;
+    background-color: #171b1e;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.questNumber{
+    background-color: #c0946b;
+    color:black;
+    margin-bottom: 5px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.questText{
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+/*BUTTON START*/
+
+.button {
+    --primary-color: #171b1e;
+    --secondary-color: #fff;
+    --hover-color: #c0946b;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    padding: 15px;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+}
+
+.button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+.button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+.button:hover {
+    background-color: var(--hover-color);
+}
+
+.button:hover .arrow {
+    background: var(--secondary-color);
+}
+
+.button:hover .arrow:before {
+    right: 0;
+}
+/*BUTTON END*/

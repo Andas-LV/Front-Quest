@@ -7,11 +7,18 @@ export default function Header (){
                 <Link href="/pages/html">
                     <div className={styles.navItem}>HTML</div>
                 </Link>
+
                 <Link href="/pages/css">
                     <div className={styles.navItem}>CSS</div>
                 </Link>
-                <div className={styles.navItem}>JS</div>
-                <div className={styles.navItem}>React</div>
+
+                <Link href="/pages/js">
+                    <div className={styles.navItem}>JS</div>
+                </Link>
+
+                <Link href="/pages/react">
+                    <div className={styles.navItem}>React</div>
+                </Link>
             </nav>
         </div>
     )
