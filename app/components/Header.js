@@ -4,7 +4,7 @@ export default function Header (){
     return(
         <div className={styles.wrapper}>
             <nav className={styles.nav}>
-                <Link href="/pages/html">
+                <Link href="/pages/Html">
                     <div className={styles.navItem}>HTML</div>
                 </Link>
 
