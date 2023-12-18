@@ -5,7 +5,7 @@ import questions from '../../data/questions.json';
 const Page = () => {
     return (
         <div>
-            <h2>React</h2>
+            <h1>React</h1>
             <QuestPage questionData={questions.react} />
         </div>
     );

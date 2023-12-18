@@ -13,7 +13,7 @@ export default function Header (){
                 </Link>
 
                 <Link href="/pages/js">
-                    <div className={styles.navItem}>JS</div>
+                    <div className={styles.navItem}>JavaScript</div>
                 </Link>
 
                 <Link href="/pages/react">
